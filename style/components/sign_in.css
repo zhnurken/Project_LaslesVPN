@@ -1,0 +1,115 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  border:#e7e7e7 1px solid;
+  border-radius: 10px;
+  display: none
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal-backdrop {
+  position: absolute;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.modal-inner {
+  position: relative;
+  z-index: 2;
+  width: 35vw;
+  display: block;
+  margin: 100px auto;
+  background-color: rgb(255, 255, 255);
+  border:#e7e7e7 1px solid;
+  border-radius: 20px
+}
+
+.modal.active .modal-inner {
+  animation: modalOpen 0.4s;
+}
+
+
+.modal-header {
+  padding: 20px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.modal-header h4 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Rubik";
+  font-style: normal;
+  font-size: 2vw;
+}
+
+.modal-header span {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.modal-form {
+  display: block;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.input {
+
+  width: 19.4vw;
+  height: 3vw;
+  border: solid 2px #f53838;
+  border-radius: 10px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1vw;
+  display: block;
+  margin: 30px auto;
+  margin-bottom: 10px;
+  padding-left: 0.8vw;
+}
+
+.input:focus {
+    border: solid 2px #0b132a;
+}
+
+.modal-form button {
+    display: block;
+    margin: 5vw auto;
+}
+
+@keyframes modalOpen {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+@media (max-width: 651px) {
+  .modal-form button {
+    margin: 6vw auto;
+}
+
+.modal-inner{
+  width: 45vw;
+}
+
+.input {
+  width: 25.4vw;
+  height: 5vw;
+}
+}

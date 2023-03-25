@@ -1,0 +1,58 @@
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  display: none;
+}
+
+.aside.active {
+  display: block;
+}
+
+.aside-backdrop {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.aside-inner {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  width: 45vw;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 4vw;
+  height: 100%;
+}
+
+.aside.active .aside-inner {
+animation: asideOpen .4s;
+}
+
+.aside-inner a {
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  font-size: 3vw;
+  line-height: 2;
+}
+
+@keyframes asideOpen {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 0;
+    }
+}

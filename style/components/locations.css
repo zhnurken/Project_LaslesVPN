@@ -1,0 +1,43 @@
+.locations_header {
+  text-align: center;
+  margin-top: 15vw;
+  font-size: 2.4vw;
+  line-height: 3.5vw;
+}
+
+.locations_subheader {
+  text-align: center;
+  margin-top: 1.5vw;
+  font-size: 1.1vw;
+}
+
+.locations_map {
+  display: block;
+  margin: 0 auto;
+  margin-top: 11vw;
+  width: 73.5vw;
+}
+
+.locations_sponsor {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2.5vw;
+    width: 79vw;
+}
+
+
+@media (max-width: 426px) {
+  .locations_header {
+    text-align: center;
+    margin-top: 15vw;
+    font-size: 3.4vw;
+    line-height: 3.5vw;
+  }
+  
+  .locations_subheader {
+    text-align: center;
+    margin-top: 1.5vw;
+    font-size: 2.1vw;
+  }
+  
+}

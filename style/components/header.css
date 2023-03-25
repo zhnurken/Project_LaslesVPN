@@ -1,0 +1,185 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 150px 90px;
+  align-items: center;
+  max-width: 1140px;
+}
+
+.header_nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #4f5665;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a:hover {
+  color: #000;
+}
+
+.sign_in {
+  border: none;
+  color: #0b132a;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.sign_in:hover {
+  color: #f53838;
+
+}
+
+.sign_up {
+  border: solid 1px;
+  padding: 13px 45px;
+  color: #f53838;
+  border-radius: 50px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.sign_up:hover {
+  color: #fff;
+  background-color: #f53838;
+}
+
+header>img {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1180px) {
+  header {
+    margin: 50px 135px 90px;
+  }
+
+  .header_nav a {
+    margin: 0 10px;
+  }
+
+  .sign_up {
+    padding: 13px 35px;
+  }
+}
+
+@media (max-width: 1050px) {
+  header{
+    margin: 50px 120px 90px;
+  }
+
+  .header_nav a {
+    font-size: 14px;
+  }
+
+  .sign_in {
+    font-size: 14px;
+  }
+
+  .sign_up {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+  margin: 50px 100px 90px;
+  }
+}
+
+@media (max-width: 891px) {
+  header {
+  margin: 50px 80px 90px;
+  }
+  .header_nav a {
+    font-size: 12px;
+  }
+  .logo {
+    width: 100px;
+    height: 27.49px;
+    padding-top: 2px;
+  }
+  header>a {
+    height: 27.49px;
+  }
+
+  .sign_in {
+    font-size: 12px;
+  }
+
+  .sign_up {
+    font-size: 12px;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 742px) {
+  .header_nav a {
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 722px) {
+  .header_nav a {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 692px) {
+  .header_nav {
+    display: none;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .sign_in {
+    font-size: 16px;
+  }
+
+  .sign_up {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+
+  header>img {
+    display: block;
+    width: 40px;
+    box-sizing: border-box;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 490px) {
+  header {
+  margin: 50px 50px 90px;
+  }
+
+  .sign_in {
+    display: none;
+  }
+
+  .sign_up {
+    display: none;
+  }
+  
+  .logo {
+    width: 100%;
+    
+  }
+
+}

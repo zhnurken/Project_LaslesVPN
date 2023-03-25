@@ -1,0 +1,121 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15vw 0 18.5vw;
+  position: relative;
+}
+
+.features-img {
+  width: 26vw;
+}
+
+.features_texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features_main-text h2 {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 2.4vw;
+  line-height: 1.45;
+  color: #0b132a;
+}
+
+.features_main-text p {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 1.1vw;
+  line-height: 1.8;
+  color: #4f5665;
+}
+
+.features_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 2;
+  color: #4f5665;
+}
+
+.features_list li {
+  display: flex;
+  align-items: center;
+}
+
+.features_list img {
+  margin-right: 1vw;
+  width: 1.75vw;
+}
+
+@media (max-width: 783px) {
+  .features-img {
+    width: 40vw;
+    position: absolute;
+    top: 0vw;
+    left: 15vw;
+    opacity: 0.2;
+    z-index: -1;
+  }
+
+  .features {
+    justify-content: center;
+  }
+
+  .features_main-text h2 {
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  .features_main-text p {
+    font-size: 1.5vw;
+    text-align: center;
+  }
+
+  .features_list {
+    font-size: 1.5vw;
+    padding-left: 7vw;
+    margin-top: 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .features_main-text h2 {
+    font-size: 4vw;
+  }
+  .features_main-text p {
+    font-size: 1.8vw;
+  }
+  
+  .features_list {
+    font-size: 1.8vw;
+    padding-left: 12vw;
+  }
+
+  .features-img {
+    width: 50vw;
+    left: 10vw;
+  }
+}
+
+@media (max-width: 426px) {
+  .features_main-text h2 {
+    font-size: 5vw;
+  }
+  .features_main-text p {
+    font-size: 2vw;
+  }
+  
+  .features_list {
+    font-size: 2vw;
+  }
+
+  .features-img {
+    width: 55vw;
+    left: 7vw;
+  }
+}

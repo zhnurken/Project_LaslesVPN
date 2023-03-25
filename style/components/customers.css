@@ -1,0 +1,166 @@
+.customers {
+  position: relative;
+  z-index: 1;
+}
+
+.customers_header {
+  text-align: center;
+  margin-top: 3.5vw;
+  font-size: 2.4vw;
+  line-height: 3.5vw;
+}
+
+.customers_subheader {
+  text-align: center;
+  margin-top: 1.3vw;
+  line-height: 2.1vw;
+  font-size: 1.1vw;
+}
+
+.customers_review {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4vw;
+}
+
+.customers_review-conteiner {
+  width: 28vw;
+  border: solid 0.2vw #dddddd;
+  border-radius: 1vw;
+  box-sizing: border-box;
+  margin-right: 0.5vw;
+  margin-left: 0.5vw;
+}
+
+.customers_review-conteiner:hover {
+  border: solid 0.2vw #f53838;
+  box-shadow: 0px 40px 80px -50px rgba(0, 0, 0, 0.41);
+}
+
+.customers_review-info {
+  display: flex;
+  justify-content: space-around;
+  margin: 2.1vw;
+  align-items: center;
+}
+
+.customers_review-info > img {
+  margin-right: 1.4vw;
+  width: 3.5vw;
+}
+
+.customers_review-info h4 {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 1.1vw;
+  line-height: 2.1vw;
+  color: #0b132a;
+}
+
+.customers_review-info span {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 0.9vw;
+  line-height: 0.2vw;
+  color: #4f5665;
+}
+
+.customers_review-info p {
+  font-size: 1.1vw;
+}
+
+.customer_rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5.4vw;
+}
+
+.customer_rating img {
+  margin-left: 0.8vw;
+  width: 1.1vw;
+}
+
+.customers_review-text {
+  margin: 0.8vw 2.3vw;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 1.1vw;
+  line-height: 2vw;
+  color: #0b132a;
+}
+
+.customer_slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4.2vw;
+}
+
+.customer_slider-dot {
+  display: flex;
+  margin-left: 10.5vw;
+}
+
+.customer_slider-dot div {
+  width: 1vw;
+  height: 1vw;
+  background-color: #dde0e4;
+  margin: 0.5vw;
+  border-radius: 50%;
+}
+
+.customer_slider-dot div:hover {
+  background-color: #f53838;
+}
+
+.customer_slider-arrow {
+  display: flex;
+  margin-right: 10.5vw;
+}
+
+.slider-arrow {
+  width: 4.5vw;
+  height: 4.5vw;
+  border: solid 0.2vw #f53838;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.4vw;
+}
+
+.slider-arrow:hover {
+  background-color: #f53838;
+}
+
+.material-symbols-outlined {
+  color: #f53838;
+}
+
+.slider-arrow:hover .material-symbols-outlined {
+  color: #fff;
+}
+
+@media (max-width: 426px) {
+  .customers_header {
+    font-size: 3.4vw;
+    line-height: 3.5vw;
+  }
+
+  .customers_subheader {
+    font-size: 2vw;
+  }
+
+  .slider-arrow {
+    display: none;
+  }
+
+  .customer_slider {
+    justify-content: center;
+  }
+
+  .customers_review-info-seoul {
+    line-height: 0.1vw !important;
+  }
+}
